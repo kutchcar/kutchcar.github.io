@@ -6,8 +6,8 @@
      <!-- Google tag (gtag.js) -->
      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q7XHZCF2BP"></script>
      <script>
-     window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
           gtag('js', new Date());
 
           gtag('config', 'G-Q7XHZCF2BP');
@@ -29,9 +29,23 @@
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/style.css">
+
      <script>
+          function gtag_report_conversion(url) {
+               var callback = function () {
+                    if (typeof (url) != 'undefined') {
+                         window.location = url;
+                    }
+               };
+               gtag('event', 'conversion', {
+                    'send_to': 'AW-864630123/omNnCLqlvd8ZEOvqpJwD',
+                    'event_callback': callback
+               });
+               return false;
+          }
+
           function trackEvent() {
-               gtag('event', 'conversion_event_contact')
+               gtag_report_conversion()
           }
      </script>
 
@@ -276,7 +290,8 @@
                               <div class="courses-thumb courses-thumb-secondary">
                                    <div class="courses-top">
                                         <div class="courses-image">
-                                             <img src="images/cars/traveller.jpg" class="img-responsive car-image" alt="">
+                                             <img src="images/cars/traveller.jpg" class="img-responsive car-image"
+                                                  alt="">
                                         </div>
                                         <!-- <div class="courses-date">
                                              <span title="passegengers"><i class="fa fa-user"></i> 2</span>
@@ -334,7 +349,7 @@
                                                   <h4>Happy customer</h4>
                                              </div>
                                              <div>
-                                                  <img src="/images/reviews/review1.png"/>
+                                                  <img src="/images/reviews/review1.png" />
                                              </div>
                                              <div class="tst-rating">
                                                   <i class="fa fa-star"></i>
@@ -351,7 +366,10 @@
                                              <div class="tst-author">
                                                   <h4>Rajesh Kumar</h4>
                                              </div>
-                                             <p>I had an amazing experience with kutchcar.com. The booking process was seamless, and the car was in pristine condition. The customer service team went above and beyond to ensure everything was perfect. I highly recommend them for anyone needing a rental car!</p>
+                                             <p>I had an amazing experience with kutchcar.com. The booking process was
+                                                  seamless, and the car was in pristine condition. The customer service
+                                                  team went above and beyond to ensure everything was perfect. I highly
+                                                  recommend them for anyone needing a rental car!</p>
                                              <div class="tst-rating">
                                                   <i class="fa fa-star"></i>
                                                   <i class="fa fa-star"></i>
@@ -367,7 +385,11 @@
                                              <div class="tst-author">
                                                   <h4>Arjun Sharma</h4>
                                              </div>
-                                             <p>Our family trip was a huge success thanks to kutchcar.com. The car we rented was spacious, clean, and comfortable, making our long drives enjoyable. The staff was friendly and helpful, providing us with great tips for our journey. We'll definitely be using their services again!</p>
+                                             <p>Our family trip was a huge success thanks to kutchcar.com. The car we
+                                                  rented was spacious, clean, and comfortable, making our long drives
+                                                  enjoyable. The staff was friendly and helpful, providing us with great
+                                                  tips for our journey. We'll definitely be using their services again!
+                                             </p>
                                              <div class="tst-rating">
                                                   <i class="fa fa-star"></i>
                                                   <i class="fa fa-star"></i>
@@ -383,7 +405,11 @@
                                              <div class="tst-author">
                                                   <h4>Vikram Singh</h4>
                                              </div>
-                                             <p>Our road trip through the countryside was unforgettable, thanks to kutchcar.com. The car was comfortable and perfect for long drives and exploring new places. The rental process was quick and easy, and the staff provided excellent recommendations for scenic routes. We'll definitely choose them again for our next adventure!</p>
+                                             <p>Our road trip through the countryside was unforgettable, thanks to
+                                                  kutchcar.com. The car was comfortable and perfect for long drives and
+                                                  exploring new places. The rental process was quick and easy, and the
+                                                  staff provided excellent recommendations for scenic routes. We'll
+                                                  definitely choose them again for our next adventure!</p>
                                              <div class="tst-rating">
                                                   <i class="fa fa-star"></i>
                                                   <i class="fa fa-star"></i>
@@ -399,7 +425,11 @@
                                              <div class="tst-author">
                                                   <h4>Sahil Patel</h4>
                                              </div>
-                                             <p>Renting from kutchcar.com made our friends' getaway truly special. The car was spacious and comfortable, perfect for our group as we toured the best tourist spots. The staff was friendly and gave us great tips for hidden gems in the area. It was an incredible experience, and we can&apos;t wait to rent from them again!</p>
+                                             <p>Renting from kutchcar.com made our friends' getaway truly special. The
+                                                  car was spacious and comfortable, perfect for our group as we toured
+                                                  the best tourist spots. The staff was friendly and gave us great tips
+                                                  for hidden gems in the area. It was an incredible experience, and we
+                                                  can&apos;t wait to rent from them again!</p>
                                              <div class="tst-rating">
                                                   <i class="fa fa-star"></i>
                                                   <i class="fa fa-star"></i>
