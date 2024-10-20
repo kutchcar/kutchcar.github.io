@@ -8,7 +8,7 @@
             text: whatsappMessage
         }
         const searchParams = new URLSearchParams(data);
-        const number = '918849743405'
+        const number = '918069409841'
         const whatsappUrl = new URL(`https://wa.me/${number}/?`) + searchParams
         location.href = whatsappUrl
     })
